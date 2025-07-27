@@ -1,0 +1,2 @@
+# ignore __pycache__ directories
+fns_and_dsa/__pycache__/
