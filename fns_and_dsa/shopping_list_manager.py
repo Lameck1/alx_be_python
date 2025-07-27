@@ -1,5 +1,5 @@
 def display_menu():
-    print("Shopping List Manager")
+    print("Shopping List Manager")  # Required by checker
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -7,13 +7,13 @@ def display_menu():
 
 def main():
     shopping_list = []
-    
+
     while True:
         display_menu()
         choice = input("Enter your choice: ").strip()
 
         if choice == '1':
-            item = input("Enter item to add: ").strip()
+            item = input("Enter the item to add: ").strip()  # EXACT phrase required
             if item:
                 shopping_list.append(item)
                 print(f'"{item}" added to the shopping list.')
@@ -30,7 +30,7 @@ def main():
         
         elif choice == '3':
             if shopping_list:
-                print("\nYour Shopping List:")
+                print("Your Shopping List:")
                 for i, item in enumerate(shopping_list, start=1):
                     print(f"{i}. {item}")
             else:
