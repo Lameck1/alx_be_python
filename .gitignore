@@ -1,3 +1,4 @@
 # ignore __pycache__ directories
 fns_and_dsa/__pycache__/
 exercises/__pycache__/
+programming_paradigm/__pycache__/
